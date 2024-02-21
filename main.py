@@ -21,9 +21,11 @@ while True:
     print("3. Sort by Z-A")
     print("4. Search by text in name")
     print("5. Search by length of name")
-    print("6. Exit")
+    print("6. Print first 10 pokemons")
+    print("7. Print the last 10 pokemons")
+    print("8. Exit")
 
-    choice = input("Enter your choice (1-6): ")
+    choice = input("Enter your choice (1-8): ")
 
     if choice == '1':
         pokemon_seq = int(input("Which pokemon would you like to choose?"))
@@ -58,6 +60,12 @@ while True:
         # https://www.w3schools.com/python/python_lists_comprehension.asp
         pass
     elif choice == '6':
+        print(pokemons[:10])
+        
+    elif choice == '7':
+        print(pokemons[-10:])
+        pass
+    elif choice == '8':
         print("Exiting")
         break
     else:
